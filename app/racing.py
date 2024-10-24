@@ -8,10 +8,10 @@ import time
 import fire
 import tqdm
 
-from controller.mppi import MPPI
-from envs.racing_env import RacingEnv
-from envs.obstacle_map_2d import ObstacleMap
-from envs.lane_map_2d import LaneMap
+from src.controller.mppi import MPPI
+from src.envs.racing_env import RacingEnv
+from src.envs.obstacle_map_2d import ObstacleMap
+from src.envs.lane_map_2d import LaneMap
 
 class racing_controller:
     def __init__(self, env, debug=False, device=torch.device("cuda"), dtype=torch.float32) -> None:
